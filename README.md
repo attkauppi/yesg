@@ -1,6 +1,15 @@
 Yahoo ESG Scores for Python
 =============================
 
+**Forked from [Lienus10](https://github.com/Lienus10/yesg/tree/master/yesg)'s repository. This fork adds using curl_impersonate, which is required to get authentication components required by Yahoo for certain endpoints:**
+
+1. `A1 Cookie`: A sessino cookie that identifies a session with Yahoo Finance
+2. `Crumb`: A security token that needs to be included with each request (query param)
+
+The very simple implementation of authentication is modified from an example used in `yfinancier` project. For more details, see [here](https://github.com/gacolitti/yfinancer/tree/main?tab=readme-ov-file#authentication).
+
+**End of fork notes**
+
 This module retrieves esg scores and other sustainability information about a company from the yahoo finance website.
 
 **Warning: The retrieved data might be outdated. Use at your own risk.**
